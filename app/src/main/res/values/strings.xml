@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">IX Simpósio Informática</string>
+
+    <string name="subtitulo">Tecnologia Aplicada ao Desenvolvimento Sustentavel</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_informacao">InformacaoActivity</string>
+
+    <string name="title_activity_informacoes">Informações</string>
+    <string name="title_activity_palestrante">Palestrante</string>
+    <string name="title_activity_programacao">Programação</string>
+    <string name="title_activity_noticias">Notícias</string>
+    <string name="title_activity_noticia_detalhada_certa">NoticiaDetalhadaCertaActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="spinner_title">Data</string>
+    <string name="title_activity_programacao_detalhada">ProgramacaoDetalhadaActivity</string>
+    <string name="title_activity_palestrantes">Palestrantes</string>
+    <string name="sobre_este_app">\nAlunos:\nÁquila Faria | aofnas@hotmail.com
+    \nArley Oliveira | arley.msn@hotmail.com\nWellington Brito | were.02@hotmail.com\nMurilo Sandiego | murilosandiego1@gmail.com
+    \nKelvin Duarte | kelvin.duarte17@gmail.com\nLucas Lima | dlima01@hotmail.com\n\nCoordenador:\nHélder Seixas Lima | helderseixas@gmail.com </string>
+    <string name="palestra_aplicacoes_tecnologicas_frederico">Palestra: Aplicações tecnológicas sustentáveis\n\nNo mundo atual as áreas do conhecimento vem convergindo trazendo cada vez mais a necessidade do desenvolvimento de projetos multidisciplinares. Nesta palestra iremos abordar desde reciclagem de lixo eletrônicos, passando pela importância do trabalho em comunidade e encerrando com o uso de geotecnologias e Veiculos Autônomos Não Tripulados – VANTs em aplicações de planejamento e monitoramento em empreendimentos agrícolas, sempre minimizando os impactos ambientais nos mesmos.\n\nData: 15/06 – A partir das 13:30h – Anfiteatro\n\nFrederico Batista é graduado em Engenharia de Telecomunicações. Experiência de mais de 12 anos no gerenciamento de projetos de telecomunicações em diversos paises pelas Américas. \nAtualmente é gerente de projetos da 14 Pix trabalhando com drones, veículo autônomos não tripulados - VANTs e geotecnologias no mapeamento aéreo para o subsídio de empreendimentos de diversas Engenharias, como Civil de Minas e Agrícola.</string>
+    <string name="palestrante_thalis">Palestra: Aplicações tecnológicas sustentáveis\n\nData: 15/06 – A partir das 13:30h – Anfiteatro\n\nPossui graduação em Engenharia de Computação pela Faculdade de Ciências e Tecnologia de Montes Claros - FACIT (2013). \nAtualmente é curador do Fórum Latino-Americano de Hardware Livre - Flahwl e do Arduino Day de Janaúba-MG e também atua na Faculdade Verde Norte - FAVENORTE no curso de Sistema de Informação nas disciplinas de Computação Gráfica e Algoritmo e Estrutura de Dados III. \nTem experiência na área de Engenharia Elétrica, com ênfase em Sistemas Embarcados, atuando principalmente nos seguintes temas: sistema embarcado, software livre, hardware livre, internet das coisas, empreendedorismo, gestão da agua, produção de alimentos e automação residencial. \nJá ministrou palestras e workshops em eventos de renome internacional como Conferência Latino-Americana de Software Livre - Latinoware, Fórum Internacional de Software Livre - Fisl, Campus Party Brasil, Campus Party Recife e Fórum Latino-Americano de Hardware Livre - Flahwl</string>
+    <string name="palestrante_cecilia">Palestra: START suas ideias. UP sua região.\n\nAbordar o comportamento da criatividade aliado ao empreendedorismo, que é propulsor do desenvolvimento econômico e como o modelo de Startups pode transformar sua ideia em solução.\n\n16/06 – A partir das 13:30h – Anfiteatro\n\nCecília Bettero é adminstradora e especialista em Gestão Empresarial com MBA pela Fundação Getúlio Vargas. Proprietária da Better Consultoria Ltda, atua com foco nas áreas de finanças, negócios e treinamento gerenciais em finanças e comportamento. \nProfessora executiva nas disciplinas de Logística, Contabilidade e Finanças, nos cursos de Pós Graduação da Fundação Getúlio Vargas da MMurad e Faesa e também da disciplina Processo Decisório no MBA em Gestão Empresarial da Faesa. \nCredenciada pela ONU como facilitadora da metodologia Empretec, maior seminário de empreendedorismo do mundo, operacionalizado no Brasil pelo SEBRAE. \nIdealizadora do Workshop Thinkers, imersão em criatividade e solução de problemas utilizando a abordagem do design thinking, realizado em parceria com o IEL ES. Colunista da revista de circulação nacional \'Gestão e Negócios\', na qual escreve mensalmente sobre gestão empresarial de forma prática e descomplicada.</string>
+    <string name="palestrante_haroldo">Palestra: Programa de apoio às tecnologias aplicadas ao desenvolvimento sustentável.\n\nConhecimento científicos no Norte de Minas Gerais. Apoio e incentivo às instituições de ensino e os pesquisadores. Empreendedorismo no Norte de Minas Gerais. Histórico da Fundetec. Incubadora de Base Tecnológica da Fundetec e o processo de incubação. Projetos apoiados pela Fundetec.\n\nData: 16/06 - Logo após a palestra: START suas ideias. UP sua região.\n\nHaroldo de Moraes Lopes possui graduação em Engenharia de Computação pela Fundação Educacional Montes Claros e MBA em Administração Acadêmica e Universitária. \nAtualmente é Executivo da Fundação de Desenvolvimento Científico e Tecnológico da Agropecuária Norte Mineira (Fundetec). \nParticipa na criação e organização de eventos relacionados às áreas sociais, educacionais e tecnológicas. \nMembro do CIEE (Centro de Integração Escola Empresa de Minas Gerais) e do CIE-MG (Colégio Estadual de Instituições de Ensino do CREA-MG). \nAtuou como professor da Fundação Educacional Montes Claros (1985 - 2015) e coordenador administrativo da Faculdade de Ciência e Tecnologia de Montes Claros - FACIT ( 2008 - 2015). \nFoi diretor do RMI (Rede Mineira de Inovação) e participou na criação e coordenação da Incubadora de Empresas INCET/FEMC. E também Coordenou o PII/FACIT ( Programa de Incentivo à Inovação do SEBRAE - MG).</string>
+    <string name="quiztech">A competição será no estilo Show do Milhão com perguntas sobre informática e tecnologia.
+Serão permitidas equipes de 5 participantes.
+Serão feitas perguntas para as equipes e os participantes responderão um de cada vez em ordem pré-definida.
+Ganhará quem fizer mais pontos. Se houver empate serão feitas perguntas até uma equipe errar. No estilo mata-mata.
+Poderão pedir ajuda às: placas, universitários e cartas. Será permitida uma única vez para cada ajuda. Nas rodadas de desempate não haverá ajuda. O valor da questão será diminuída pela metade quando for respondida por ajuda.
+As perguntas serão exibidas no telão para o público e no monitor para o participante.
+Poderão participar alunos dos cursos técnicos integrado, concomitante e subsequente de qualquer instituição de ensino.
+Premiação: 1º lugar: Uma cesta de brindes e medalhas; e o 2º lugar: medalhas.
+As equipes terão um nome para identificá-los e uma cor que será sorteada no início.
+Qualquer outro tipo de ajuda vinda da plateia ou de alguém não autorizado a equipe (beneficiada) perderá automaticamente os pontos daquela rodada e passará os pontos para a equipe adversária.</string>
+
+</resources>

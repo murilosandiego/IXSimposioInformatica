@@ -1,0 +1,142 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start|bottom"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    android:paddingTop="7dp">
+
+    <RelativeLayout
+        android:id="@+id/rlt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <ImageView
+            android:id="@+id/imvlogomain"
+            android:layout_width="360dp"
+            android:layout_height="280dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo2" />
+
+
+        <ImageButton
+            android:id="@+id/imbInformacoes"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/imvlogomain"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/clickinformacoes"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageButton
+            android:id="@+id/imgProgramacao"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/imvlogomain"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/clickprogramaca" />
+
+        <ImageButton
+            android:id="@+id/imgPalestrante"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imvlogomain"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/clickpalestrante"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/txtRealizacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgProgramacao"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="23dp"
+            android:text="Realização"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/vw_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="1.5dp"
+            android:layout_below="@+id/txtRealizacao"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/imvRealizacao"
+            android:layout_width="328dp"
+            android:layout_height="148dp"
+            android:layout_below="@+id/vw_divider"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logoifnmgjanuaria" />
+
+        <TextView
+            android:id="@+id/txtApoio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imvRealizacao"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="23dp"
+            android:text="Apoio"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/vw_divider_apoio"
+            android:layout_width="wrap_content"
+            android:layout_height="1.5dp"
+            android:layout_below="@+id/txtApoio"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/imvPerson"
+            android:layout_width="360dp"
+            android:layout_height="177dp"
+            android:layout_below="@+id/vw_divider_apoio"
+            android:layout_centerInParent="true"
+            android:src="@drawable/apoio" />
+
+        <TextView
+            android:id="@+id/txtPatrocinadores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imvPerson"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="23dp"
+            android:text="Patrocinadores"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/vw_divider_patrocinio"
+            android:layout_width="wrap_content"
+            android:layout_height="1.5dp"
+            android:layout_below="@+id/txtPatrocinadores"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/imvPatrocinadores"
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:layout_below="@+id/vw_divider_patrocinio"
+            android:layout_centerInParent="true"
+            android:src="@drawable/pa" />
+
+    </RelativeLayout>
+
+</ScrollView>

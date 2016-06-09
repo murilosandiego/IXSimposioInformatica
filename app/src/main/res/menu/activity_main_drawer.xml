@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@android:drawable/ic_menu_compass"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_informacoes"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="Informações" />
+        <item
+            android:id="@+id/nav_palestrantes"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Palestrantes" />
+        <item
+            android:id="@+id/nav_programacao"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="Programação" />
+        <item
+            android:id="@+id/nav_noticias"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Notícias" />
+        <item
+            android:id="@+id/nav_sobre"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="Sobre este App" />
+    </group>
+
+    <item android:title="Conecte">
+
+        <menu>
+            <item
+                android:id="@+id/nav_site"
+                android:icon="@android:drawable/ic_menu_set_as"
+                android:title="Site do Evento" />
+            <item
+                android:id="@+id/nav_inscricao"
+                android:icon="@android:drawable/ic_menu_send"
+                android:title="Inscrição" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="Compartilhe" />
+        </menu>
+    </item>
+
+</menu>

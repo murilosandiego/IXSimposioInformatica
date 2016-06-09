@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.edu.ifnmg.ixsimposioinformatica.activity.InformacoesActivity"
+    tools:showIn="@layout/activity_informacoes">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOCAL DO EVENTO  O IX Simpósio de Informática será realizado no IFNMG – Câmpus Januária\nFazenda São Geraldo, s/nº, km 06, Bairro Bom Jardim. Telefones para contato: (38) 3629-4600 \n\nSERVIÇOS DE HOSPEDAGEM, ALIMENTAÇÃO E TRANSPORTE EM JANUÁRIA  SERVIÇOS DE HOSPEDAGEM\n\nHotel e Restaurante Viva Maria Av. São Francisco, 448 Centro, Januária-MG (38) 3621-1414 Preço de referência: apto individual (c/ ar-condicionado): R$ 150,00\n\nSesc Pousada Januária Av. Aeroporto, 250 Aeroporto, Januária-MG (38) 3621-1076 / 1089 / 1347 Preço de referência: apto individual (c/ ar-condicionado): R$ 74,00 Preço de referência: apto individual (c/ ventilador): R$ 62,00\n\nHotel Rondônia Praça Getúlio Vargas, 49 Centro, Januária-MG (38) 3621-1592 Preço de referência: apto individual (c/ ar-condicionado): R$ 80,00 Preço de referência: apto individual (c/ ventilador): R$ 55,00" />
+
+</RelativeLayout>

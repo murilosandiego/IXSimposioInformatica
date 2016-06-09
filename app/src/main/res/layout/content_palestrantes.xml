@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.edu.ifnmg.ixsimposioinformatica.activity.PalestrantesActivity"
+    tools:showIn="@layout/activity_palestrantes">
+
+    <RelativeLayout
+        android:id="@+id/rltPalestrantes"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+
+        <ImageView
+            android:id="@+id/imvfrederico"
+            android:layout_height="85dp"
+            android:layout_width="80dp"
+            android:src="@drawable/frederico" />
+
+        <TextView
+            android:id="@+id/txtFred"
+            android:layout_alignBottom="@+id/imvfrederico"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imvfrederico"
+            android:layout_width="wrap_content"
+            android:text="Frederico Batista"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:background="@color/colorPrimary"
+            android:id="@+id/divideFred"
+            android:layout_alignLeft="@+id/txtFred"
+            android:layout_alignRight="@id/txtFred"
+            android:layout_below="@+id/imvfrederico"
+            android:layout_height="1.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtdetfredererico"
+            android:layout_below="@id/divideFred"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/palestra_aplicacoes_tecnologicas_frederico"/>
+
+
+        <View
+            android:background="@color/colorDivider"
+            android:id="@+id/divideFred2"
+            android:layout_below="@+id/txtdetfredererico"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imvThalis"
+            android:layout_below="@id/txtdetfredererico"
+            android:layout_height="85dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="80dp"
+            android:src="@drawable/thalis" />
+
+        <TextView
+            android:id="@+id/txtThalis"
+            android:layout_alignBottom="@+id/imvThalis"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imvThalis"
+            android:layout_width="wrap_content"
+            android:text="Thalis Antunes de Souza"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:background="@color/colorPrimary"
+            android:id="@+id/divideThalis"
+            android:layout_alignLeft="@id/txtThalis"
+            android:layout_alignRight="@id/txtThalis"
+            android:layout_below="@+id/imvThalis"
+            android:layout_height="1.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtdetThalis"
+            android:layout_below="@id/divideThalis"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/palestrante_thalis" />
+
+        <View
+            android:background="@color/colorDivider"
+            android:id="@+id/divideFred3"
+            android:layout_below="@+id/txtdetThalis"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content" />
+
+
+        <ImageView
+            android:id="@+id/imvCecilia"
+            android:layout_below="@id/txtdetThalis"
+            android:layout_height="85dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="80dp"
+            android:src="@drawable/cecilia" />
+
+        <TextView
+            android:id="@+id/txtCecilia"
+            android:layout_alignBottom="@+id/imvCecilia"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imvCecilia"
+            android:layout_width="wrap_content"
+            android:text="Cecília Bettero"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:background="@color/colorPrimary"
+            android:id="@+id/divideCecilia"
+            android:layout_alignLeft="@id/txtCecilia"
+            android:layout_alignRight="@id/txtCecilia"
+            android:layout_below="@+id/imvCecilia"
+            android:layout_height="1.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtdetCecilia"
+            android:layout_below="@id/divideCecilia"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/palestrante_cecilia" />
+
+
+        <View
+            android:background="@color/colorDivider"
+            android:id="@+id/divideFred4"
+            android:layout_below="@+id/txtdetCecilia"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content" />
+
+
+        <ImageView
+            android:id="@+id/imvHaroldo"
+            android:layout_below="@id/txtdetCecilia"
+            android:layout_height="85dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="80dp"
+            android:src="@drawable/haroldo" />
+
+        <TextView
+            android:id="@+id/txtHaroldo"
+            android:layout_alignBottom="@+id/imvHaroldo"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imvHaroldo"
+            android:layout_width="wrap_content"
+            android:text="Haroldo de Moraes Lopes"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:background="@color/colorPrimary"
+            android:id="@+id/divideHaroldo"
+            android:layout_alignLeft="@id/txtHaroldo"
+            android:layout_alignRight="@id/txtHaroldo"
+            android:layout_below="@+id/imvHaroldo"
+            android:layout_height="1.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtdetHaroldo"
+            android:layout_below="@id/divideHaroldo"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/palestrante_haroldo" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

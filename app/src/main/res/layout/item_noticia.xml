@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_noticia"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        fresco:placeholderImage="@drawable/loading_img"
+        fresco:failureImage="@drawable/error_img"
+        fresco:retryImage="@drawable/retry_img"/>
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textSize="18sp"
+        android:text="khbghvjh"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+
+        android:layout_below="@+id/txtTitulo"
+        android:layout_alignLeft="@+id/txtTitulo"
+        android:id="@+id/txtDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="oiij"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="4dp"/>
+
+
+
+</LinearLayout>
