@@ -24,6 +24,8 @@ import br.edu.ifnmg.ixsimposioinformatica.fragment.SobreFragment;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    //Murilo
+
     static final String STATE_SCORE = "playerScore";
     static final String STATE_LEVEL = "playerLevel";
     private int mCurrentScore = 1;
@@ -180,20 +182,7 @@ public class MainActivity extends AppCompatActivity
         mCurrentScore = savedInstanceState.getInt(STATE_SCORE);
         mCurrentLevel = savedInstanceState.getInt(STATE_LEVEL);
     }
-
-//    @Override
-//    public void onBackPressed() {
-//
-//        int count = getFragmentManager().getBackStackEntryCount();
-//
-//        if (count == 0) {
-//            super.onBackPressed();
-//            startActivity(new Intent(this,MainActivity.class));
-//        } else {
-//            getFragmentManager().popBackStack();
-//        }
-//
-//    }
+    
 
     @Override
     public void onBackPressed() {
