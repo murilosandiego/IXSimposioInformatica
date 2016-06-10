@@ -2,8 +2,11 @@ package br.edu.ifnmg.ixsimposioinformatica.fragment;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -51,56 +54,6 @@ public class NoticiasFragment extends Fragment {
 
     private ArrayList<Noticia> listaDeNoticias;
 
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        Fresco.initialize(this);
-//
-//        //Download Noticias
-//
-//
-//        setContentView(R.layout.activity_noticias);
-//        this.listaDeNoticias = new ArrayList<>();
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-//
-////        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-////        fab.setOnClickListener(new View.OnClickListener() {
-////            @Override
-////            public void onClick(View view) {
-////                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-////                        .setAction("Action", null).show();
-////            }
-////        });
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//
-////        GridView gridView = (GridView) findViewById(R.id.gdvNoticias);
-////        gridView.setAdapter(new NoticiasAdapter(this,listaDeNoticias));
-//
-////        Uri uri = Uri.parse("http://192.168.2.111/android/fotos/amo2.jpg");
-////        SimpleDraweeView draweeView = (SimpleDraweeView) findViewById(R.id.img_noticia_teste);
-////       draweeView.setImageURI(uri);
-//
-//
-////
-//        ListView listView = (ListView) findViewById(R.id.ltvNoticias);
-//        listView.setAdapter(new NoticiasAdapter(this,listaDeNoticias));
-//
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Intent intent = new Intent(getBaseContext(),NoticiaDetalhadaCertaActivity.class);
-//                intent.putExtra("noticia",listaDeNoticias.get(position));
-//                startActivity(intent);
-//            }
-//        });
-//
-//
-//        //Executando Json
-//        this.getJSON(JSON_URL);
-//        this.lerDadosCache();
-//
-//    }
 
     public NoticiasFragment() {
         // Required empty public constructor
@@ -124,7 +77,7 @@ public class NoticiasFragment extends Fragment {
                 startActivity(intent);
             }
         });
-      //  setRetainInstance(true);
+        //  setRetainInstance(true);
         return rootView;
     }
 
@@ -137,8 +90,14 @@ public class NoticiasFragment extends Fragment {
             listaDeNoticias = savedInstanceState.getParcelableArrayList("listaDeNoticias");
         } else {
             listaDeNoticias = new ArrayList<>();
-            this.getJSON(JSON_URL);
-            this.lerDadosCache();
+            if (isOnline(getActivity())) {
+                this.getJSON(JSON_URL);
+                this.lerDadosCache();
+            } else if (lerDadosCache() != null) {
+                this.lerDadosCache();
+            } else {
+                Toast.makeText(getActivity(), "Não foi possível abrir as notícas, pois não ha conexão com a internet", Toast.LENGTH_LONG).show();
+            }
         }
     }
 
@@ -147,6 +106,15 @@ public class NoticiasFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         Log.e("LOG", "onActivityCreatedNoticias");
         //Executando Json
+    }
+
+    public static boolean isOnline(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        if (netInfo != null && netInfo.isConnected())
+            return true;
+        else
+            return false;
     }
 
 
@@ -229,18 +197,25 @@ public class NoticiasFragment extends Fragment {
 
         }
 
-        if (jsonObjectString == null) {
-            Toast.makeText(getActivity(), "Não foi possível abrir as notícas, pois não ha conexão com a internet", Toast.LENGTH_LONG).show();
-            return null;
-        } else {
-            return jsonObjectString;
-        }
+//        if (jsonObjectString == null) {
+//            Toast.makeText(getActivity(), "Não foi possível abrir as notícas, pois não ha conexão com a internet", Toast.LENGTH_LONG).show();
+//            return null;
+//        } else {
+        return jsonObjectString;
+//        }
     }
 
-    public void lerDadosCache() {
+    public String lerDadosCache() {
         Log.e("LOG", "lerDadosCache");
-        String strJsonCache = lerJsonCache();
-        extrairJson(strJsonCache);
+        String strJsonCache = null;
+        strJsonCache = lerJsonCache();
+
+        if (strJsonCache != null) {
+            extrairJson(strJsonCache);
+            return strJsonCache;
+        } else {
+            return null;
+        }
     }
 
     @Override
@@ -252,12 +227,12 @@ public class NoticiasFragment extends Fragment {
 
     private void getJSON(String url) {
         class GetJSON extends AsyncTask<String, Void, String> {
-        //    ProgressDialog loading;
+            ProgressDialog loading;
 
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
-     //               loading = ProgressDialog.show(getActivity(), "Por favor espere...",null,true,true);
+                loading = ProgressDialog.show(getActivity(), "Por favor espere...", null, true, true);
             }
 
             @Override
@@ -289,8 +264,8 @@ public class NoticiasFragment extends Fragment {
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
- //                    loading.dismiss();
                 gravarJsonCache(s);
+                loading.dismiss();
             }
         }
         GetJSON gj = new GetJSON();
